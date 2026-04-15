@@ -1550,3 +1550,30 @@ img {
   }
 
 }
+.socials {
+  margin-top: 15px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+.socials a:hover {
+  color: var(--accent);
+  background: rgba(94,236,255,0.08);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .socials {
+    justify-content: center;
+  }
+}
