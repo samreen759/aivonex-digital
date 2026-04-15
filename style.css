@@ -1550,28 +1550,3 @@ img {
   }
 
 }
-/* ================= MOBILE AUTO HOVER (NO DESIGN CHANGE) ================= */
-
-@media (max-width: 768px) {
-
-  .glass,
-  .why-card,
-  .service-box,
-  .step-content,
-  .value-card,
-  .mini-card {
-    transition: 0.3s ease;
-  }
-
-  /* Apply SAME hover effect automatically */
-  .glass,
-  .why-card,
-  .service-box,
-  .step-content,
-  .value-card,
-  .mini-card {
-    transform: translateY(-6px);
-    border-color: var(--accent);
-  }
-
-}
