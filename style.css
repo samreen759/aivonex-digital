@@ -1425,3 +1425,128 @@ section {
     grid-template-columns: 1fr;
   }
 }
+/* ================= MOBILE FIX (FINAL PATCH) ================= */
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* Fix containers */
+section,
+.nav-container,
+.footer-container,
+.process,
+.why,
+.contact,
+.services-grid {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Prevent overflow issues */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* HERO FIX (MOST IMPORTANT) */
+@media (max-width: 768px) {
+
+  .hero {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 60px 20px !important;
+  }
+
+  .hero h1 {
+    font-size: 34px !important;
+    line-height: 1.2;
+  }
+
+  .hero h1 span {
+    font-size: 34px !important;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+/* NAVBAR FIX */
+@media (max-width: 768px) {
+
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+/* GRID FIXES */
+@media (max-width: 768px) {
+
+  .grid,
+  .why-grid,
+  .services-grid,
+  .about-grid,
+  .contact-grid,
+  .values-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+}
+
+/* TEXT SCALING */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 32px !important;
+  }
+
+  h2 {
+    font-size: 24px !important;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+}
+
+/* BUTTON FIX */
+@media (max-width: 768px) {
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+/* FOOTER FIX */
+@media (max-width: 768px) {
+
+  .footer {
+    padding: 50px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+}
